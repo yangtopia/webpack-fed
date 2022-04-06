@@ -1,0 +1,27 @@
+{
+  "name": "webpack-fed",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "host",
+      "app1",
+      "app2"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "start:host": "yarn workspace host start",
+    "start:app1": "yarn workspace app1 start",
+    "start:app2": "yarn workspace app2 start"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@craco/craco": "^6.4.3",
+    "external-remotes-plugin": "^1.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "lerna": "^4.0.0",
+    "webpack": "^5.71.0"
+  }
+}
