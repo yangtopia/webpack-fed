@@ -2,21 +2,22 @@
   "name": "webpack-fed",
   "private": true,
   "version": "1.0.0",
-  "license": "MIT",
   "workspaces": {
     "packages": [
       "host",
-      "app1",
-      "app2"
+      "modules/*"
     ]
   },
   "scripts": {
     "start": "lerna run --parallel start",
+    "build": "lerna run build",
     "start:host": "yarn workspace host start",
-    "start:app1": "yarn workspace app1 start",
-    "start:app2": "yarn workspace app2 start"
+    "start:app1": "yarn workspace modules/app1 start",
+    "start:app2": "yarn workspace modules/app2 start"
   },
   "dependencies": {
+    "antd": "^4.19.5",
+    "recoil": "^0.7.0",
     "sass": "^1.50.0"
   },
   "devDependencies": {
