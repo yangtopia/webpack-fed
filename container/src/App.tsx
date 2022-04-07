@@ -2,10 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// @ts-ignore
-const Button = React.lazy(() => import('app1/App'));
-// @ts-ignore
-// const App2 = React.lazy(() => import('app2/App'));
+const App1 = React.lazy(() => import('app1/App'));
+const App2 = React.lazy(() => import('app2/App'));
+
+console.log(App1, App2);
 
 function App() {
   return (
@@ -24,9 +24,9 @@ function App() {
           Learn React Host
         </a>
       </header>
-      {/*<React.Suspense fallback={<div>'...App1 loading'</div>}>*/}
-      {/*    <App1/>*/}
-      {/*</React.Suspense>*/}
+      <React.Suspense fallback={<div>'...App1 loading'</div>}>
+        <App1 />
+      </React.Suspense>
       {/*<React.Suspense fallback={<div>'...App2 loading'</div>}>*/}
       {/*    <App2/>*/}
       {/*</React.Suspense>*/}
