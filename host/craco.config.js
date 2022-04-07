@@ -25,6 +25,11 @@ module.exports = {
             eager: true,
             requiredVersion: deps['react-dom'],
           },
+          recoil: {
+            singleton: true,
+            eager: true,
+            requiredVersion: deps.recoil,
+          },
         },
       }),
     ],
