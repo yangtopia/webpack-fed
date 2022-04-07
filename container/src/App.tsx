@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 // @ts-ignore
-const App1 = React.lazy(() => import('app1/App'));
+const Button = React.lazy(() => import('app1/App'));
 // @ts-ignore
 // const App2 = React.lazy(() => import('app2/App'));
 

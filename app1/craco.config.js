@@ -17,11 +17,11 @@ module.exports = {
           './App': './src/App',
         },
         shared: {
-          ...deps,
           react: { singleton: true, eager: true, requiredVersion: deps.react },
           'react-dom': {
             singleton: true,
             eager: true,
+            requiredVersion: deps['react-dom'],
           },
         },
       }),
