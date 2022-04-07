@@ -7,6 +7,11 @@ module.exports = {
     open: false,
   },
   webpack: {
+    configure: {
+      output: {
+        publicPath: 'auto',
+      },
+    },
     plugins: [
       new ModuleFederationPlugin({
         name: 'app1',

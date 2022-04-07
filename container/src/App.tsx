@@ -5,8 +5,6 @@ import './App.css';
 const App1 = React.lazy(() => import('app1/App'));
 const App2 = React.lazy(() => import('app2/App'));
 
-console.log(App1, App2);
-
 function App() {
   return (
     <div className="App">
@@ -21,15 +19,15 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Host
+          Container App
         </a>
       </header>
       <React.Suspense fallback={<div>'...App1 loading'</div>}>
         <App1 />
       </React.Suspense>
-      {/*<React.Suspense fallback={<div>'...App2 loading'</div>}>*/}
-      {/*    <App2/>*/}
-      {/*</React.Suspense>*/}
+      <React.Suspense fallback={<div>'...App2 loading'</div>}>
+        <App2 />
+      </React.Suspense>
     </div>
   );
 }

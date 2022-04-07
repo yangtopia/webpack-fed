@@ -1,14 +1,16 @@
 const { ModuleFederationPlugin } = require('webpack').container;
-const path = require('path');
 const deps = require('./package.json').dependencies;
 
 module.exports = {
   devServer: {
-    static: path.join(__dirname, 'build'),
     port: 3000,
-    hot: false,
   },
   webpack: {
+    configure: {
+      output: {
+        publicPath: 'auto',
+      },
+    },
     plugins: [
       new ModuleFederationPlugin({
         name: 'container',
