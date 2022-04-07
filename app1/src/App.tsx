@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Module App 12
+          Module App 1
         </a>
       </header>
     </div>

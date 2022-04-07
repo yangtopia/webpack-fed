@@ -5,6 +5,7 @@ module.exports = {
   devServer: {
     port: 3002,
     open: false,
+    hot: false,
   },
   webpack: {
     configure: {
