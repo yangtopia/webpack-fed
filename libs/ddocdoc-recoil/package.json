@@ -1,0 +1,22 @@
+{
+  "name": "ddocdoc-recoil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "author": "yangtopia@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.1",
+    "rollup": "^2.70.1"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "recoil": "^0.7.1"
+  }
+}
