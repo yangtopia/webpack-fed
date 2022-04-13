@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "workspaces": {
     "packages": [
-      "host",
+      "shell",
       "modules/*"
     ]
   },
   "scripts": {
     "start": "lerna run --parallel start",
     "build": "lerna run build",
-    "start:host": "yarn workspace host start",
+    "start:shell": "yarn workspace shell start",
     "start:app1": "yarn workspace modules/app1 start",
     "start:app2": "yarn workspace modules/app2 start"
   },
