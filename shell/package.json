@@ -7,7 +7,9 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "recoil": "^0.7.1",
-    "ddocdoc-recoil": "./libs/ddocdoc-recoil",
+    "antd": "^4.19.5",
+    "sass": "^1.50.0",
+    "shared-recoil": "./libs/shared-recoil",
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {

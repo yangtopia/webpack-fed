@@ -1,6 +1,6 @@
 import React, {ChangeEvent} from 'react';
 import {useRecoilState} from 'recoil';
-import {commonState} from 'ddocdoc-recoil';
+import {commonState} from 'shared-recoil';
 import {Layout} from 'antd';
 
 const {Content} = Layout;

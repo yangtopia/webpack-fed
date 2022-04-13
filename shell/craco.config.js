@@ -31,7 +31,7 @@ module.exports = {
             eager: true,
             requiredVersion: deps.recoil,
           },
-          'ddocdoc-recoil': {
+          'shared-recoil': {
             singleton: true,
             eager: true,
           }

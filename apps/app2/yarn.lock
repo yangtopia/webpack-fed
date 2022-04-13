@@ -3297,7 +3297,7 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-ddocdoc-recoil@../../libs/ddocdoc-recoil:
+shared-recoil@../../libs/shared-recoil:
   version "1.0.0"
 
 debug@2.6.9, debug@^2.6.0, debug@^2.6.9:

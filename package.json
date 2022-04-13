@@ -5,7 +5,8 @@
   "workspaces": {
     "packages": [
       "shell",
-      "apps/*"
+      "apps/*",
+      "libs/*"
     ]
   },
   "scripts": {
@@ -16,8 +17,6 @@
     "start:app2": "yarn workspace apps/app2 start"
   },
   "dependencies": {
-    "antd": "^4.19.5",
-    "sass": "^1.50.0"
   },
   "devDependencies": {
     "@craco/craco": "^6.4.3",

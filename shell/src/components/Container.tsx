@@ -1,7 +1,7 @@
 import React, {ChangeEvent} from 'react';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import './Container.scss';
-import {commonState} from 'ddocdoc-recoil';
+import {commonState} from 'shared-recoil';
 
 import NavPath from './NavPath';
 
