@@ -14,7 +14,9 @@
     "build": "lerna run build",
     "start:shell": "yarn workspace shell start",
     "start:app1": "yarn workspace apps/app1 start",
-    "start:app2": "yarn workspace apps/app2 start"
+    "start:app2": "yarn workspace apps/app2 start",
+    "start:app3": "yarn workspace apps/app3 start",
+    "preinstall": "lerna clean --yes"
   },
   "dependencies": {
   },
