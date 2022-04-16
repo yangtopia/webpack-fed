@@ -1,9 +1,9 @@
-const { ModuleFederationPlugin } = require('webpack').container;
+const {ModuleFederationPlugin} = require('webpack').container;
 const deps = require('./package.json').dependencies;
 
 module.exports = {
   devServer: {
-    port: 3002,
+    port: 3003,
     open: false,
     hot: false,
   },
@@ -15,26 +15,17 @@ module.exports = {
     },
     plugins: [
       new ModuleFederationPlugin({
-        name: 'app2',
+        name: 'app3',
         filename: 'remoteEntry.js',
         exposes: {
           './App': './src/App',
         },
         shared: {
-          react: { singleton: true, eager: true, requiredVersion: deps.react },
+          react: {singleton: true, eager: true, requiredVersion: deps.react},
           'react-dom': {
             singleton: true,
             eager: true,
             requiredVersion: deps['react-dom'],
-          },
-          recoil: {
-            singleton: true,
-            eager: true,
-            requiredVersion: deps.recoil,
-          },
-          'shared-recoil': {
-            singleton: true,
-            eager: true,
           },
           'shared-zustand': {
             singleton: true,

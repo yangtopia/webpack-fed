@@ -5,7 +5,7 @@ var commonState = atom({
     default: '', // default value (aka initial value)
 });
 var log = function () {
-    console.log("hello");
+    console.log("Hello Recoil!");
 };
 
 export { commonState, log };

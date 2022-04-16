@@ -6,5 +6,5 @@ export const commonState = atom({
 });
 
 export const log = () => {
-  console.log("hello");
+  console.log("Hello Recoil!");
 };

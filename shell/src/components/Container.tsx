@@ -14,6 +14,7 @@ const {Header, Sider, Content} = Layout;
 
 const App1 = React.lazy(() => import('app1/App'));
 const App2 = React.lazy(() => import('app2/App'));
+const App3 = React.lazy(() => import('app3/App'));
 
 const Container: React.VFC = () => {
   const [text, setText] = useRecoilState(commonState);
@@ -44,6 +45,10 @@ const Container: React.VFC = () => {
                 <Menu.Item key="2">
                   <span>App2</span>
                   <Link to="/app2"/>
+                </Menu.Item>
+                <Menu.Item key="3">
+                  <span>App3</span>
+                  <Link to="/app3"/>
                 </Menu.Item>
               </SubMenu>
             </Menu>
@@ -85,6 +90,17 @@ const Container: React.VFC = () => {
                     <NavPath paths={['Apps', 'App2']}/>
                     <React.Suspense fallback={<span>...loading</span>}>
                       <App2/>
+                    </React.Suspense>
+                  </>
+                }
+              />
+              <Route
+                path="/app3"
+                element={
+                  <>
+                    <NavPath paths={['Apps', 'App3']}/>
+                    <React.Suspense fallback={<span>...loading</span>}>
+                      <App3/>
                     </React.Suspense>
                   </>
                 }
